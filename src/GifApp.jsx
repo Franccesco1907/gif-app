@@ -1,14 +1,12 @@
 import { useState } from "react"
 import { AddCategory, GifGrid } from "./components"
-// https://developers.giphy.com/docs/api/endpoint/#search
+
 export const GifApp = () => {
 
   const [categories, setCategories] = useState(['One Punch'])
 
   const onAddCategory = (newCategory) => {
     if (categories.includes(newCategory)) return
-
-    // setCategories([...categories, newCategory])
     setCategories([newCategory, ...categories])
   }
 
