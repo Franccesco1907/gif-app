@@ -1,8 +1,5 @@
-# React + Vite
+# GIF App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Buscador de GIFs con React, Vite y Giphy. Copia `.env.example` a `.env.local` y configura `VITE_GIPHY_API_KEY`; Vite incluye esta clave en el cliente. La consulta está en `src/helpers/getGifs.js`.
+Ejecuta `npm ci` y `npm run dev`; abre la URL que indica Vite con la ruta `/gif-app/` configurada en `vite.config.js`.
+Comprobaciones: `npm run build` y `npm run lint`; vista del build: `npm run preview`. No hay suite de pruebas configurada.
